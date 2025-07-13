@@ -2,7 +2,7 @@
 
 ChipZone es una aplicación Android diseñada para demostrar la implementación del patrón de arquitectura **MVVM (Model-View-ViewModel)** y el uso de **LiveData** para validar datos en tiempo real, así como para gestionar el registro e inicio de sesión de usuarios.
 
----
+-Programador: Quezada Chorres Cesar Alexander
 
 ## 📱 Características
 
