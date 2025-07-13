@@ -23,5 +23,5 @@ ChipZone es una aplicación Android diseñada para demostrar la implementación 
 - Uso de ViewModel para manejar datos y LiveData para observar cambios.
 
   ##Login 
-<img src="https://github.com/user-attachments/assets/3244671f-7c5f-46ce-9e0b-4cbb215db8a2" alt="Login_edit" style="width: 300px;">
+<img src="https://github.com/user-attachments/assets/3244671f-7c5f-46ce-9e0b-4cbb215db8a2" alt="Login_edit" width="300px">
 
