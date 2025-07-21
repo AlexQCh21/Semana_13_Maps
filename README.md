@@ -1,31 +1,50 @@
-# 🚀 ChipZone
+# 🍽️ CUCHAREABLE
 
-ChipZone es una aplicación Android diseñada para demostrar la implementación del patrón de arquitectura **MVVM (Model-View-ViewModel)** y el uso de **LiveData** para validar datos en tiempo real, así como para gestionar el registro e inicio de sesión de usuarios.
+**Cuchareable** es una aplicación móvil que integra Google Maps para ayudarte a localizar los puestos de comida más cercanos a la **UNS** de forma rápida y sencilla.
 
--Programador: Quezada Chorres Cesar Alexander
+👨‍💻 **Desarrollador:** Quezada Chorres Cesar Alexander
 
-## 📱 Características
+---
 
-✅ **Registro de usuario**  
-- Validación en tiempo real de los campos del formulario usando LiveData.  
-- Manejo de errores para garantizar datos completos y correctos.  
+## 📱 Características principales
 
-✅ **Inicio de sesión**  
-- Validación de credenciales con retroalimentación inmediata.  
-- Persistencia de datos básicos para sesiones activas.  
+✅ **🔐 Registro de usuario**  
+- Validación en tiempo real de los campos del formulario mediante **LiveData**.  
+- Manejo de errores para garantizar datos completos y consistentes.  
 
-✅ **Pantalla principal (Home)**  
-- Acceso tras autenticación exitosa.  
-- Interfaz simple y amigable.  
+✅ **🔑 Inicio de sesión**  
+- Autenticación de credenciales con retroalimentación inmediata al usuario.  
+- Sesiones persistentes para evitar logins repetitivos.  
 
-✅ **Arquitectura MVVM**  
+✅ **🏠 Pantalla principal (Home)**  
+- Acceso a la aplicación tras autenticación exitosa.  
+- Interfaz intuitiva y centrada en la experiencia del usuario.  
+
+✅ **🗺️ Google Maps integrado**  
+- Visualización de los puestos de comida en un mapa interactivo.  
+- Posicionamiento basado en la ubicación actual del usuario.  
+
+✅ **🏗️ Arquitectura MVVM**  
 - Separación clara de responsabilidades entre UI y lógica de negocio.  
-- Uso de ViewModel para manejar datos y LiveData para observar cambios.
+- Uso de **ViewModel** para el manejo de datos y **LiveData** para observar cambios dinámicos.  
 
 ## Login 
-<img src="https://github.com/user-attachments/assets/3244671f-7c5f-46ce-9e0b-4cbb215db8a2" alt="Login_edit" width="300px">
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/ad68fda4-a753-4338-81bd-c7d579d2649c" />
 
 ## Registro
-<img src="https://github.com/user-attachments/assets/8df5965b-2fc6-40a2-b3bb-dbb1c8dff8c9" alt="Login_edit" width="300px">
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/b2bbc49b-716a-48af-929a-77a8bc20171b" />
 
+## Home
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/57956b78-a18e-4ceb-a823-83224ff1d1fe" />
 
+## Formulario para agregar un Point
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/1e1443eb-a3bd-4c13-b6ae-17ac9871e0c4" />
+
+##Sección en donde están mis points favoritos
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/a392b2e6-ec61-425c-88f7-10e200016860" />
+
+##En esta sección están mis aportes
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/3841b629-8f96-433e-aa70-7c1a55bb6d3c" />
+
+## Ubicación de cada point en el mapa
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/5aed065e-1371-4558-8892-74e594d6045a" />
