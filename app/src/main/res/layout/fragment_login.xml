@@ -1,115 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     android:fitsSystemWindows="true"
     tools:context=".LoginFragment">
 
+   <!-- Contenedor Scrollable -->
    <ScrollView
-       android:layout_width="match_parent"
+       android:layout_width="0dp"
        android:layout_height="0dp"
        android:fillViewport="true"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent">
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
       <LinearLayout
           android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:gravity="center"
+          android:layout_height="wrap_content"
           android:orientation="vertical">
 
+         <!-- Fondo superior y título -->
+         <LinearLayout
+             android:id="@+id/fondo_superior"
+             android:layout_width="match_parent"
+             android:layout_height="230dp"
+             android:layout_margin="0dp"
+             android:padding="0dp"
+             android:background="@drawable/fondo_auth">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="login"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:layout_gravity="center_vertical"/>
+         </LinearLayout>
+
+         <!-- Logo sobrepuesto -->
          <com.google.android.material.card.MaterialCardView
+             android:id="@+id/logo_card"
              android:layout_width="230dp"
              android:layout_height="230dp"
              app:cardCornerRadius="300dp"
-             android:layout_marginBottom="10dp">
+             app:cardElevation="4dp"
+             app:cardBackgroundColor="@android:color/white"
+             android:layout_marginTop="-35dp"
+             android:layout_gravity="center">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/logo" />
+                android:src="@drawable/logo_cuchareable_v1"
+                android:scaleType="centerInside"/>
          </com.google.android.material.card.MaterialCardView>
 
-         <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="10dp"
-             android:fontFamily="@font/roboto_flex"
-             android:paddingHorizontal="5dp"
-             android:text="Bienvenido!"
-             android:textStyle="bold"
-             android:textAlignment="textStart"
-             android:textColor="#2f0474"
-             android:textSize="35dp" />
-         <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginBottom="20dp"
-             android:layout_marginStart="10dp"
-             android:fontFamily="@font/roboto_flex"
-             android:paddingHorizontal="5dp"
-             android:text="ChipZone tu tienda de confianza"
-             android:textAlignment="textStart"
-             android:textColor="#2f0474"
-             android:textSize="18sp" />
-
+         <!-- Formulario -->
          <LinearLayout
+             android:id="@+id/form_layout"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:orientation="vertical"
              android:paddingHorizontal="10dp">
 
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/text_edit"
-                app:boxBackgroundMode="none"
-                android:layout_marginBottom="15dp"
-                app:hintEnabled="false">
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="Correo"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
-               <com.google.android.material.textfield.TextInputEditText
-                   android:id="@+id/editTextEmail"
-                   android:layout_width="match_parent"
-                   android:layout_height="60dp"
-                   android:drawableStart="@drawable/ic_person"
-                   android:drawablePadding="8dp"
-                   android:inputType="textEmailAddress"
-                   android:gravity="center_vertical"
-                   android:padding="5dp"
-                   android:hint="Correo electrónico"
-                   android:textColorHint="#670cf9"
-                   android:textColor="#1a0137" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:endIconMode="password_toggle"
-                android:background="@drawable/text_edit"
-                app:boxBackgroundMode="none"
+                android:layout_height="60dp"
+                android:background="@drawable/et_custom"
+                android:id="@+id/editTextEmail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:paddingStart="10dp"
                 android:layout_marginBottom="10dp"
-                app:hintEnabled="false">
+                android:hint="email@test.com"
+                android:textCursorDrawable="@drawable/custom_cursor"/>
 
-               <com.google.android.material.textfield.TextInputEditText
-                   android:id="@+id/editTextPassword"
-                   android:layout_width="match_parent"
-                   android:layout_height="60dp"
-                   android:drawableStart="@drawable/ic_clave"
-                   android:drawablePadding="8dp"
-                   android:inputType="textPassword"
-                   android:gravity="center_vertical"
-                   android:padding="5dp"
-                   android:hint="Contraseña"
-                   android:textColorHint="#670cf9"
-                   android:textColor="#27014D" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="Contraseña"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
-
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/et_custom"
+                android:id="@+id/editTextPassword"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp"
+                android:hint="••••••"
+                android:autofillHints="password"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -136,31 +142,27 @@
                    android:textSize="17sp"
                    android:textStyle="bold"
                    android:text="@string/registrate" />
-
             </LinearLayout>
-
-
          </LinearLayout>
 
-
+         <!-- Botón login -->
          <com.google.android.material.card.MaterialCardView
              android:id="@+id/btn_bread"
              android:layout_width="80dp"
              android:layout_height="80dp"
-             app:cardBackgroundColor="#4c00c6"
-             android:layout_marginVertical="20dp"
-             app:cardCornerRadius="5dp">
+             app:cardBackgroundColor="#000000"
+             app:cardCornerRadius="15dp"
+             android:layout_marginTop="16dp"
+             android:layout_marginBottom="16dp"
+             android:layout_gravity="center">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_sign_in"/>
          </com.google.android.material.card.MaterialCardView>
 
-
       </LinearLayout>
-
    </ScrollView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

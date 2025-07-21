@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">S12_MVVM</string>
+    <string name="app_name">CuchareableApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="registrate"><u>Registrarse</u></string>
+
 </resources>

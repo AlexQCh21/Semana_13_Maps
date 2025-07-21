@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.cursokotlin.s12_mvvm"
+    namespace = "com.cursokotlin.cuchareable"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.cursokotlin.s12_mvvm"
+        applicationId = "com.cursokotlin.cuchareable"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -61,6 +61,15 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation("com.google.firebase:firebase-storage-ktx:20.3.0")
+
     //Firebase
     implementation("com.google.firebase:firebase-auth")
+
+    //Maps
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.libraries.places:places:3.3.0")
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }

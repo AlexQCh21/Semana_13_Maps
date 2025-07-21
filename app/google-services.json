@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "388260576417",
-    "project_id": "mvvm-ca8f0",
-    "storage_bucket": "mvvm-ca8f0.firebasestorage.app"
+    "project_number": "466733175258",
+    "project_id": "cuchareables",
+    "storage_bucket": "cuchareables.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:388260576417:android:7a21854d55309849a8c4e0",
+        "mobilesdk_app_id": "1:466733175258:android:4d498d99f40271732f70e3",
         "android_client_info": {
-          "package_name": "com.cursokotlin.s12_mvvm"
+          "package_name": "com.cursokotlin.cuchareable"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCZh_e6y_--DthNSvlBCrjIR3_3RECF0tY"
+          "current_key": "AIzaSyAs3YoAwH75JTSbPkbZB7BVTn31GU9hzcE"
         }
       ],
       "services": {

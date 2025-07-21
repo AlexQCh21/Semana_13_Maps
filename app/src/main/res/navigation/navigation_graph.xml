@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.cursokotlin.s12_mvvm.RegisterFragment"
+        android:name="com.cursokotlin.cuchareable.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.cursokotlin.s12_mvvm.LoginFragment"
+        android:name="com.cursokotlin.cuchareable.LoginFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_login" >
         <action
@@ -33,12 +33,21 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.cursokotlin.s12_mvvm.HomeFragment"
+        android:name="com.cursokotlin.cuchareable.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.cursokotlin.cuchareable.MapaFragment"
+        android:label="fragment_mapa"
+        tools:layout="@layout/fragment_mapa">
     </fragment>
 
 </navigation>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Foto (Placeholder) -->
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/photo_placeholder"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Agregar foto" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddImgLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Agregar Imagen"
+        android:layout_marginTop="16dp"
+        app:icon="@drawable/add_img"
+        android:minHeight="0dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        android:textSize="18sp"
+        app:backgroundTint="#1a5276"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"/>
+
+    <!-- Nombre -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/bebas_neue"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Restaurante"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:background="@drawable/et_custom"
+        android:paddingStart="10dp"/>
+
+    <!-- Referencia -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REFERENCIA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bebas_neue"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etReference"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Al lado de ..."
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:background="@drawable/et_custom"
+        android:paddingStart="10dp"/>
+
+    <!-- Tipo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIPO"
+        android:fontFamily="@font/bebas_neue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Comida rápida"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:fontFamily="@font/bebas_neue"
+        android:background="@drawable/et_custom"
+        android:paddingStart="10dp"/>
+
+    <!-- Longitud -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LONGITUD"
+        android:fontFamily="@font/bebas_neue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="-1.000000"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:background="@drawable/et_custom"
+        android:paddingStart="10dp"/>
+
+    <!-- Latitud -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LATITUD"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/bebas_neue"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="-1.000000"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:background="@drawable/et_custom"
+        android:paddingStart="10dp"/>
+
+    <!-- Botón agregar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Agregar Point"
+        android:layout_marginTop="16dp"
+        app:icon="@drawable/icon_add_map"
+        android:minHeight="0dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
